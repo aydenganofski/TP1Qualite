@@ -1,15 +1,20 @@
 package iut;
+
+import org.junit.jupiter.api.Test;
+
 public class test_unitaire {
     
-    @test
-    void nombrePositifs(int a, int b){
-        a = 5; b = 3;
-        equals(a-b);
+    @Test
+    void nombrePositifs(){
+        int a = 5; 
+        int b = 3;
+        AssertEquals(a-b, 2);
     }
 
-    @test
-    void nombreNegatifs(int a, int b){
-        a = -4; b = -7;
-        equals(a-b);
+    @Test
+    void nombreNegatifs(){
+        int a = -5; 
+        int b = -3;
+        AssertEquals(a-b, 2);
     }
 }
