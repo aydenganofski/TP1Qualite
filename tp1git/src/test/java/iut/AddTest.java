@@ -1,25 +1,25 @@
 package iut;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
 
-public class Add {
+public class AddTest {
 
 
     @Test
     public void positif(){
         int a = 1;
         int b = 2;
-        assertTrue(3, add(a+b));
+        assertEquals(3, Add.add(a,b));
     }
 
     @Test
     public void negatif(){
         int a = -1;
         int b = -2;
-        assertTrue(-3, add(a+b));
+        assertEquals(-3, Add.add(a,b));
     }
 
 
@@ -27,14 +27,14 @@ public class Add {
     public void avecZero(){
         int a = 1;
         int b = 0;
-        assertTrue(1, add(a+b));
+        assertEquals(1, Add.add(a,b));
     }
 
     @Test
     public void doitFaireZero(){
         int a = 1;
         int b = 0;
-        assertTrue(1, add(a+b));
+        assertEquals(1, Add.add(a,b));
     }
 }
 
